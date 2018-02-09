@@ -1,0 +1,233 @@
+[07-Feb-2018 09:38:15 UTC] PHP Fatal error:  Call to undefined method App\View\AppView::h() in /home/ubuntu/workspace/daylight/src/Template/Persons/index.ctp on line 27
+[07-Feb-2018 09:38:15 UTC] PHP Stack trace:
+[07-Feb-2018 09:38:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[07-Feb-2018 09:38:15 UTC] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[07-Feb-2018 09:38:15 UTC] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[07-Feb-2018 09:38:15 UTC] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[07-Feb-2018 09:38:15 UTC] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:15 UTC] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[07-Feb-2018 09:38:15 UTC] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:15 UTC] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[07-Feb-2018 09:38:15 UTC] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:15 UTC] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[07-Feb-2018 09:38:15 UTC] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:15 UTC] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[07-Feb-2018 09:38:15 UTC] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[07-Feb-2018 09:38:15 UTC] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[07-Feb-2018 09:38:15 UTC] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[07-Feb-2018 09:38:15 UTC] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[07-Feb-2018 09:38:15 UTC] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[07-Feb-2018 09:38:15 UTC] PHP  18. include() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:1014
+[07-Feb-2018 09:38:39 UTC] PHP Parse error:  syntax error, unexpected '>' in /home/ubuntu/workspace/daylight/src/Template/Persons/index.ctp on line 27
+[07-Feb-2018 09:38:39 UTC] PHP Stack trace:
+[07-Feb-2018 09:38:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[07-Feb-2018 09:38:39 UTC] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[07-Feb-2018 09:38:39 UTC] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[07-Feb-2018 09:38:39 UTC] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[07-Feb-2018 09:38:39 UTC] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:39 UTC] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[07-Feb-2018 09:38:39 UTC] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:39 UTC] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[07-Feb-2018 09:38:39 UTC] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:39 UTC] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[07-Feb-2018 09:38:39 UTC] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:38:39 UTC] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[07-Feb-2018 09:38:39 UTC] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[07-Feb-2018 09:38:39 UTC] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[07-Feb-2018 09:38:39 UTC] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[07-Feb-2018 09:38:39 UTC] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[07-Feb-2018 09:38:39 UTC] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[07-Feb-2018 09:45:35 UTC] PHP Fatal error:  Call to undefined method App\View\AppView::format() in /home/ubuntu/workspace/daylight/src/Template/Persons/index.ctp on line 30
+[07-Feb-2018 09:45:35 UTC] PHP Stack trace:
+[07-Feb-2018 09:45:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[07-Feb-2018 09:45:35 UTC] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[07-Feb-2018 09:45:35 UTC] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[07-Feb-2018 09:45:35 UTC] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[07-Feb-2018 09:45:35 UTC] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:35 UTC] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[07-Feb-2018 09:45:35 UTC] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:35 UTC] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[07-Feb-2018 09:45:35 UTC] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:35 UTC] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[07-Feb-2018 09:45:35 UTC] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:35 UTC] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[07-Feb-2018 09:45:35 UTC] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[07-Feb-2018 09:45:35 UTC] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[07-Feb-2018 09:45:35 UTC] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[07-Feb-2018 09:45:35 UTC] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[07-Feb-2018 09:45:35 UTC] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[07-Feb-2018 09:45:35 UTC] PHP  18. include() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:1014
+[07-Feb-2018 09:45:48 UTC] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/daylight/src/Template/Persons/index.ctp on line 30
+[07-Feb-2018 09:45:48 UTC] PHP Stack trace:
+[07-Feb-2018 09:45:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[07-Feb-2018 09:45:48 UTC] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[07-Feb-2018 09:45:48 UTC] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[07-Feb-2018 09:45:48 UTC] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[07-Feb-2018 09:45:48 UTC] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:48 UTC] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[07-Feb-2018 09:45:48 UTC] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:48 UTC] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[07-Feb-2018 09:45:48 UTC] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:48 UTC] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[07-Feb-2018 09:45:48 UTC] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[07-Feb-2018 09:45:48 UTC] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[07-Feb-2018 09:45:48 UTC] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[07-Feb-2018 09:45:48 UTC] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[07-Feb-2018 09:45:48 UTC] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[07-Feb-2018 09:45:48 UTC] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[07-Feb-2018 09:45:48 UTC] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/daylight/src/Model/Table/ArticlesTable.php on line 49
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP Stack trace:
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  14. Cake\Controller\Controller->invokeAction() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:121
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  15. call_user_func_array:{/home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:435}() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:435
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  16. App\Controller\ArticlesController->view() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:435
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  17. Cake\Controller\Controller->__get() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:24
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  18. Cake\Controller\Controller->loadModel() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:350
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  19. Cake\ORM\Locator\TableLocator->get() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Datasource/ModelAwareTrait.php:112
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  20. Cake\ORM\Locator\TableLocator->_getClassName() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:156
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  21. Cake\Core\App::className() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/ORM/Locator/TableLocator.php:201
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  22. Cake\Core\App::_classExistsInBase() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Core/App.php:64
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  23. class_exists() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Core/App.php:152
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  24. spl_autoload_call() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Core/App.php:152
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  25. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Core/App.php:152
+[08-Feb-2018 11:49:50 Asia/Tokyo] PHP  26. Composer\Autoload\includeFile() /home/ubuntu/workspace/daylight/vendor/composer/ClassLoader.php:322
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP Fatal error:  Call to undefined function App\Model\Table\array_seach() in /home/ubuntu/workspace/daylight/src/Model/Table/ArticlesTable.php on line 44
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP Stack trace:
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  14. Cake\Controller\Controller->invokeAction() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:121
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  15. call_user_func_array:{/home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:435}() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:435
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  16. App\Controller\ArticlesController->edit() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:435
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  17. Cake\ORM\Table->save() /home/ubuntu/workspace/daylight/src/Controller/ArticlesController.php:57
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  18. Cake\Database\Connection->transactional() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/ORM/Table.php:1492
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  19. Cake\ORM\Table->Cake\ORM\{closure}() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Database/Connection.php:570
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  20. Cake\ORM\Table->_processSave() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/ORM/Table.php:1491
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  21. Cake\ORM\Table->dispatchEvent() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/ORM/Table.php:1542
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  22. Cake\Event\EventManager->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php:78
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  23. Cake\Event\EventManager->_callListener() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Event/EventManager.php:391
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  24. App\Model\Table\ArticlesTable->beforeSave() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Event/EventManager.php:426
+[08-Feb-2018 19:47:57 Asia/Tokyo] PHP  25. App\Model\Table\ArticlesTable->_buildTags() /home/ubuntu/workspace/daylight/src/Model/Table/ArticlesTable.php:21
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP Fatal error:  Call to undefined function users() in /home/ubuntu/workspace/daylight/src/Template/Articles/index.ctp on line 3
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP Stack trace:
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[09-Feb-2018 12:46:26 Asia/Tokyo] PHP  18. include() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:1014
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP Fatal error:  Call to undefined function users() in /home/ubuntu/workspace/daylight/src/Template/Articles/index.ctp on line 3
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP Stack trace:
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[09-Feb-2018 12:49:53 Asia/Tokyo] PHP  18. include() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:1014
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP Fatal error:  Call to a member function login() on a non-object in /home/ubuntu/workspace/daylight/src/Template/Articles/index.ctp on line 3
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP Stack trace:
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[09-Feb-2018 12:52:00 Asia/Tokyo] PHP  18. include() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:1014
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP Fatal error:  Call to a member function login() on a non-object in /home/ubuntu/workspace/daylight/src/Template/Articles/index.ctp on line 3
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP Stack trace:
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[09-Feb-2018 12:52:53 Asia/Tokyo] PHP  18. include() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:1014
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP Fatal error:  Call to a member function login() on a non-object in /home/ubuntu/workspace/daylight/src/Template/Articles/index.ctp on line 3
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP Stack trace:
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   1. {main}() /home/ubuntu/workspace/daylight/webroot/index.php:0
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   2. Cake\Http\Server->run() /home/ubuntu/workspace/daylight/webroot/index.php:37
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   3. Cake\Http\Runner->run() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Server.php:90
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   4. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:51
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   5. Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   6. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:81
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   7. Cake\Routing\Middleware\AssetMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   8. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:88
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP   9. Cake\Routing\Middleware\RoutingMiddleware->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  10. Cake\Http\Runner->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:62
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  11. Cake\Http\BaseApplication->__invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/Runner.php:65
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  12. Cake\Http\ActionDispatcher->dispatch() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/BaseApplication.php:83
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  13. Cake\Http\ActionDispatcher->_invoke() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:95
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  14. Cake\Controller\Controller->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php:127
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  15. Cake\View\View->render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/Controller/Controller.php:617
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  16. Cake\View\View->_render() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:597
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  17. Cake\View\View->_evaluate() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:973
+[09-Feb-2018 12:52:57 Asia/Tokyo] PHP  18. include() /home/ubuntu/workspace/daylight/vendor/cakephp/cakephp/src/View/View.php:1014
