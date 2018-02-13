@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
@@ -24,23 +25,20 @@ class UsersController extends AppController
     public function index()
     {
         $users = $this->paginate($this->Users);
-
-        $user1 = $this->Auth->user();//これではないのかな。
-        // $user1 = $this->request->Param('pass.0');
-        
         $this->set(compact('users'));
         $this->set('_serialize', ['users']);
         
-        // $this->set($users);
+        //ログイン状態の確認用変数
+        $user1 = $this->Auth->user();
+        $this->set('user1', $user1);
         
-        // $user1 = set(' OK');//実験
-        if (isset($user1)) {
-            $user1 ="<?= $this->Html->link('ログアウト', array('controller'=>'users','action'=>'logout')) ?>";
-        } else {
-            $user1 =array('ログイン', array('controller'=>'users','action'=>'login')) ;
-            // $user1 = $this->Html->link('ログイン', array('controller'=>'users','action'=>'login')) ;
-        }
-        $this->set('user1', $user1);//渡し方もこれじゃないのかな。
+        //ようこそ表示用名前取得
+        if(isset($user1)){
+            $temp1 = $user1['email'];
+            $end1 = stripos($temp1,'@');
+            $name1 = substr($temp1,0,$end1);
+            $this->set('name1',$name1);
+        };
     }
 
     /**
@@ -132,7 +130,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
+                return $this->redirect($this->Auth->redirectUrl('/articles'));
             }
             $this->Flash->error('ユーザー名またはパスワードが不正です。');
         }
@@ -141,6 +139,8 @@ class UsersController extends AppController
     public function logout()
     {
         $this->Flash->success('ログアウトしました。');
-        return $this->redirect($this->Auth->logout());
+        $this->Auth->logout();
+        return $this->redirect($this->Auth->redirectUrl('/articles'));
+        // return $this->redirect($this->Auth->logout());
     }
 }

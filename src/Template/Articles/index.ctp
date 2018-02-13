@@ -1,4 +1,26 @@
 <h1>記事一覧</h1>
+<?php
+    $total = [];
+    $total02 = [];
+    foreach ($query as $row):
+        $total[] = $row->title;//記事総数用
+        $total02[] = $row->user_id;//投稿記事数用
+    endforeach;
+    $this->set('total',$total);
+    $total02 = array_count_values($total02);
+    if(isset($name1)){
+        $i = $list01[$name1];
+    };
+?>
+
+<?php
+    if(is_null($user1)) {
+        echo $this->Html->link('ログイン', ['controller'=>'Users','action'=>'login']);
+    } else {
+        echo 'ようこそ！ ' . h($name1) . ' さん。 ' . 'あなたの投稿した記事は　' . h($total02[$i]) . '件あります。';
+        echo $this->Html->link('ログアウト', ['controller'=>'Users','action'=>'logout']);
+    };
+?>
 
 <table>
     <tr class="inu">
@@ -11,15 +33,12 @@
 <?php
     $total = [];
     foreach ($query as $row):
-        $total[] = $row->title;
+        $total[] = $row->title;//記事総数用
     endforeach;
-    echo '記事の総数：' . count($total);
+    echo '<h4>記事の総数：' . count($total) . '</h4>';
 ?>
 <br>
 
-<?= h($kook['momo']) ?>
-<br>
-<?= h($kook['gogo']) ?>
     
 <table>
     <tr>

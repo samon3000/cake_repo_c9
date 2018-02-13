@@ -1,4 +1,5 @@
 <?php
+// header('Content-Type: text/html; charset=UTF-8');
 /**
   * @var \App\View\AppView $this
   */
@@ -14,11 +15,17 @@
 </nav>
 <div class="users index large-9 medium-8 columns content">
     <h3><?= __('Users') ?></h3>
-    <P><?= $this->Html->link($user1) ?></P>
-    <!--<P><?= $user1 ?></P>-->
-    <P><?= $this->Html->link('ログイン', array('controller'=>'users','action'=>'login')) ?></P>
-    <!--<P><?= h(var_dump($user1)) ?></P>-->
-    <!--<P><?= h(var_export($users)) ?></P>-->
+    
+    <?php
+        if(is_null($user1)) {
+            echo $this->Html->link('ログイン', ['controller'=>'Users','action'=>'login']);
+        } else {
+            echo 'ようこそ！ ' . h($name1) . ' さん';
+            echo $this->Html->link('ログアウト', ['controller'=>'Users','action'=>'logout']);
+        };
+    ?>
+    <!--<?= h(var_dump($user1)) ?>-->
+    
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

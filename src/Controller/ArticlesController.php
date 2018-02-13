@@ -26,16 +26,25 @@ class ArticlesController extends AppController
         $articles = $this->Paginator->paginate($this->Articles->find());
         $this->set(compact('articles'));
         
-        $username = 'sally';
-        $this->set('username', $username);
+        //ログイン状態の確認用変数取得
+        $user1 = $this->Auth->user();
+        $this->set('user1', $user1);
         
-        $kook = [
-            'momo' => '配列のテスト。桃',
-            'gogo' => '午後'
-        ];
-        $this->set('kook',$kook);
+        //ようこそ表示用名前取得
+        if(isset($user1)){
+            $temp1 = $user1['email'];
+            $end1 = stripos($temp1,'@');
+            $name1 = substr($temp1,0,$end1);
+            $this->set('name1',$name1);
+            // unset($temp1,$end1,$name1);
+        };
         
-        $temp = TableRegistry::get('Articles');
+        //投稿数表示用
+        $list01 = ['cakephp'=>1,'gecko'=>2,'yellow'=>3,'red'=>4];
+        $this->set('list01',$list01);
+        
+        //記事総数用変数取得
+        $temp = TableRegistry::get('articles');
         $query = $temp->find();
         $this->set('query', $query);
         unset($temp);
