@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+// use Cake\View\Helper\HtmlHelper;
 
 /**
  * Users Controller
@@ -24,8 +25,22 @@ class UsersController extends AppController
     {
         $users = $this->paginate($this->Users);
 
+        $user1 = $this->Auth->user();//これではないのかな。
+        // $user1 = $this->request->Param('pass.0');
+        
         $this->set(compact('users'));
         $this->set('_serialize', ['users']);
+        
+        // $this->set($users);
+        
+        // $user1 = set(' OK');//実験
+        if (isset($user1)) {
+            $user1 ="<?= $this->Html->link('ログアウト', array('controller'=>'users','action'=>'logout')) ?>";
+        } else {
+            $user1 =array('ログイン', array('controller'=>'users','action'=>'login')) ;
+            // $user1 = $this->Html->link('ログイン', array('controller'=>'users','action'=>'login')) ;
+        }
+        $this->set('user1', $user1);//渡し方もこれじゃないのかな。
     }
 
     /**

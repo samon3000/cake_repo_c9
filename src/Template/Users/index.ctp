@@ -3,6 +3,7 @@
   * @var \App\View\AppView $this
   */
 ?>
+<?= $this->Html->link('記事一覧へ戻る', ['controller' => 'articles', 'action' => 'index']) ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -13,6 +14,11 @@
 </nav>
 <div class="users index large-9 medium-8 columns content">
     <h3><?= __('Users') ?></h3>
+    <P><?= $this->Html->link($user1) ?></P>
+    <!--<P><?= $user1 ?></P>-->
+    <P><?= $this->Html->link('ログイン', array('controller'=>'users','action'=>'login')) ?></P>
+    <!--<P><?= h(var_dump($user1)) ?></P>-->
+    <!--<P><?= h(var_export($users)) ?></P>-->
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

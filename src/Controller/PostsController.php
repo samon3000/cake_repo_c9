@@ -3,12 +3,8 @@
 
 namespace App\Controller;
 
-use Cake\ORM\ResultSet;
 
-use Cake\ORM\TableRegistry;
-
-
-class ArticlesController extends AppController
+class PostsController extends AppController
 {
     public function initialize()
     {
@@ -17,34 +13,22 @@ class ArticlesController extends AppController
         $this->loadComponent('Paginator');
         $this->loadComponent('Flash'); // FlashComponent をインクルード
         $this->Auth->allow(['tags']);
-        
     }
     
     public function index()
     {
-        // $this->loadComponent('Paginator');
+        $this->loadComponent('Paginator');
         $articles = $this->Paginator->paginate($this->Articles->find());
         $this->set(compact('articles'));
         
         $username = 'sally';
         $this->set('username', $username);
-        
-        $kook = [
-            'momo' => '配列のテスト。桃',
-            'gogo' => '午後'
-        ];
-        $this->set('kook',$kook);
-        
-        $temp = TableRegistry::get('Articles');
-        $query = $temp->find();
-        $this->set('query', $query);
-        unset($temp);
-        
+        // $this->set($username);
     }
-    public function view($slug = null)
+    public function view()
     {
-        $article = $this->Articles->findBySlug($slug)->firstOrFail();
-        $this->set(compact('article'));
+        $post = ['title' => 'kkk', 'slider' => 'ggg', 'id' => 54, 'memo' => 'rrr'];
+        $this->set('post', $post);
     }
     
     public function add()

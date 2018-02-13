@@ -426,6 +426,19 @@ th {
     padding: 0;
 }
 
+.oni {
+    color: #fff;
+    background: #f99;
+    line-height: 2.2;
+    padding:0.6em;
+    border-radius: 0.4em;
+    overflow:hidden;
+}
+
+.inu {
+    border:none;
+}
+
 /*
  * Copyright (c) 2013-2014 ZURB, inc.
 * MIT License
